@@ -38,12 +38,10 @@ FullDeck.fullDeck
   .count(handScore(_) == target)
 ```
 
-And it turns out the answer is....drumroll please...
+And it turns out the answer is....48,276. And that took my laptop 11 minutes!
 
-I actually don't know because every computer I have choked on this.
-It turns out that enumerating 133 million sets is pretty tough. But
-I will definitely let you know when I figure it out!
+So the answer of how rare of an event this was, it will occur in only
+0.03% of 7-card hands!
 
-At this point this seems a little embarrassing, isn't it amazing
-that [Edward Thorp](https://en.wikipedia.org/wiki/Edward_O._Thorp)
-was able to do all this [in the 1960s using FORTRAN](https://youtu.be/nn6HZdMJwnU?t=20).
+Isn't it amazing that [Edward Thorp](https://en.wikipedia.org/wiki/Edward_O._Thorp)
+was able to do all this [in the 1960s using FORTRAN](https://youtu.be/nn6HZdMJwnU?t=20)!?
