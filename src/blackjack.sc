@@ -11,6 +11,16 @@ def handScore(hand: Set[Card]): Int = {
     .foldRight(0)(_ max _)
 }
 
-FullDeck.fullDeck
+val sevenCardHands =
+  FullDeck.fullDeck
+    .subsets(7)
+    .count(handScore(_) != 0)
+
+val sevenCard21s =
+  FullDeck.fullDeck
   .subsets(7)
   .count(handScore(_) == target)
+
+print(s"There are ${sevenCardHands} possible legal hands" +
+  s" of 7 cards in Blackjack and of those ${sevenCard21s} are" +
+  s" 21s\n")

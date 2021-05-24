@@ -43,5 +43,20 @@ And it turns out the answer is....48,276. And that took my laptop 11 minutes!
 So the answer of how rare of an event this was, it will occur in only
 0.03% of 7-card hands!
 
+BUT WAIT A MINUTE! It turns out that most of the time when you get to 7 cards you've already busted.
+
+So how common is it for a 7-card hand to be a 21 AMONG LEGAL 7-card hands? We can also do that calculation.
+
+It turns out there are 121,960 legal 7-card hands:
+
+```
+FullDeck.fullDeck
+  .subsets(7)
+  .filter(handScore(_) != 0)
+```
+
+So actually given that I have 7 cards and I've not yet busted, there's a fairly good chance
+(48,276/121,960 ~= 40%) that I hit 21.
+
 Isn't it amazing that [Edward Thorp](https://en.wikipedia.org/wiki/Edward_O._Thorp)
 was able to do all this [in the 1960s using FORTRAN](https://youtu.be/nn6HZdMJwnU?t=20)!?
